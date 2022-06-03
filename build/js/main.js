@@ -44,17 +44,37 @@ const assignments = [
     "url": "week04/l08.html"
     },
     {
-    "label": "CORS to Sleep Outside",
+    "label": "SleepOutside: Github",
+    "url": "week04/l08.html"
+    },
+    {
+    "label": "SleepOutside: CORS",
     "url": "https://cors-anywhere.herokuapp.com/corsdemo"
     },
     {
-    "label": "Sleep Outside Project",
+    "label": "SleepOutside: Github",
     "url": "https://jmmonjeremy.github.io/L02_Team_Activity_1/build/"
     },
     {
-    "label": "My Livrary Project",
+    "label": "SleepOutside: Trello",
+    "url": "https://trello.com/b/s2W4DiIa/sleapoutside-wdd330-team5"
+    },
+    {
+    "label": "SleepOutside",
+    "url": "https://jmmonjeremy.github.io/L02_Team_Activity_1/build/"
+    },
+    {
+    "label": "Library Project: Github",
+    "url": "https://wmsmckay.github.io/WDD330-groupProject/"
+    },
+    {
+    "label": "Library Project: Trello",
+    "url": "https://trello.com/b/Es8dcnYd/wdd330-groupproject"
+    } ,
+    {
+    "label": "Library Project",
     "url": "https://wmsmckay.github.io/WDD330-groupProject/build/"
-    }    
+    }     
 ];
 function preparePortfolioItem(templateClone, data) {
   const item = templateClone.querySelector("a");
