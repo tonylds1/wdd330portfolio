@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 04 Exercises and Notes<</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-title">
+        <div class="vertical">
+          <h1>Week05 - L09 - Notes</h1>
+        </div>
+        <div class="backlink">
+          <a href="../index.html">BACK TO MENU</a>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h1>Notes</h1>
+        <p>
+          data- attribute is ignored by the browser and is intent to be used by
+          javascript
+        </p>
+        <h2>How to declare</h2>
+        <pre><code>
+            <div id='hero' data-powers='flight superSpeed'>
+                Superman
+            </div>
+        </code></pre>
+
+        <h2>how to retrieve</h2>
+        <pre><code>
+            const superman = document.getElementById('hero');
+            const powers = superman.dataset.powers;
+            
+        </code></pre>
+        <h2>Web Storage Vs Cookies</h2>
+        <ul>
+          <li>
+            Information stored is not shared with the server on every request
+          </li>
+          <li>
+            Information is available in multiple windows of the browser (but
+            only if the domain is the same)
+          </li>
+          <li>
+            Storage capacity limit is much larger than the 4KB limit for cookies
+            (there is no actual limit in the specification, but most browser
+            have a limit set at %GB per domain.)
+          </li>
+          <li>
+            Any data stored does not autimatically expire as it does with
+            cookies.
+            <b
+              >This potentially makes cookies a better choice for something like
+              showing a popup once a day
+            </b>
+          </li>
+        </ul>
+        <p>
+          There is also a <b>sessionStorage</b> object that works in the same
+          way, although the data is only saved for the current session
+        </p>
+
+        <h1>You are here: <span id="youAreHere"></span></h1>
+        <script>
+          function youAreHere(position) {
+            const youAreHereElement = document.getElementById("youAreHere");
+            youAreHereElement.append(
+              `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`
+            );
+          }
+
+          navigator.geolocation.getCurrentPosition(youAreHere);
+
+          if (window.Notification) {
+            Notification.requestPermission().then((permission) => {
+              if (Notification.permission === "granted") {
+                new Notification("Hello JavaScript!");
+              }
+            });
+          }
+        </script>
+        <p>
+          workers: interesting to learn and practice
+          <a href="https://mastery.games/serviceworkies/"
+            >click here to check it out</a
+          >
+        </p>
+
+        <p>Websockets allows two-direction communication</p>
+        <p>
+          windows.notification: That showed a message on my notebook list of
+          notifications.
+        </p>
+
+        <p>Html5 understand a new tag: <b>video</b></p>
+        <p>
+          <b>wss://</b> is the protocol used for websocket connection
+          <b>echo.websocket.org/</b> is no available any more. We can find more
+          information about creating our websocket service in this
+          <a
+            href="https://www.lob.com/blog/websocket-org-is-down-here-is-an-alternative"
+            >link</a
+          >
+        </p>
+
+        <canvas id="canvas" width="400" height="400"
+          >Sorry, but your browser does not support the canvas element</canvas
+        >
+        <script>
+          const canvasElement = document.getElementById("canvas");
+          const context = canvasElement.getContext("2d");
+          context.fillStyle = "#0000cc"; // a blue fill color
+          context.strokeStyle = "#ccc";
+          context.lineWidth = 4;
+          context.fillRect(10, 10, 100, 50);
+          context.strokeRect(10, 100, 100, 50);
+
+          context.beginPath();
+          context.moveTo(130, 50);
+          context.lineTo(180, 50);
+          context.moveTo(155, 50);
+          context.lineTo(155, 90);
+          context.strokeStyle = "#c00";
+          context.lineWidth = 15;
+          context.stroke();
+
+          context.beginPath();
+          context.arc(200, 200, 30, 0, Math.PI * 2, false);
+          context.strokeStyle = "#ff0";
+          context.lineWidth = 4;
+          context.stroke();
+        </script>
+      </section>
+
+      <section class="questions">
+        <p>
+          What is more professional: build new sites aiming the new standard
+          HTML5.1 or think about compatibility and always choose a base old HTML
+          format?
+        </p>
+        <p>
+          About service workers, could I say that its main purpose is to avoid
+          screen block?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

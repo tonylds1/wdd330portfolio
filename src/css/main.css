@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+}
+root {
+  --main-color: blue;
+}
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  background-image: linear-gradient(to bottom, green, rgb(49, 51, 48));
+  height: 200px;
+  padding: 20px;
+}
+
+footer {
+  background-image: linear-gradient(to top, green, rgb(49, 51, 48));
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header > .logo > img {
+  border-radius: 50%;
+  height: 100%;
+}
+.main {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  background-color: rgb(49, 51, 48);
+}
+.portfolio-items {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.portfolio-item {
+  border-radius: 20px;
+  border: 2px solid green;
+  display: flex;
+  width: 200px;
+  height: 40px;
+}
+
+.portfolio-item:hover {
+  border-width: 4px;
+  transition: 0.2s ease;
+}
+
+.portfolio-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 0.8em;
+}
+.container {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  margin-left: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 8px;
+}
+
+.train {
+  width: 300px;
+}
+
+.train__result,
+.detect__result {
+  margin-top: 16px;
+}
+
+.table .body__row,
+.table .header__row {
+  display: flex;
+  flex-flow: row;
+}
+
+.table .body__cell,
+.table .header__cell {
+  padding: 4px;
+  width: 200px;
+}
+
+textarea {
+  height: 130px;
+}
+
+.vertical {
+  -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -o-transform: rotate(-90deg); /* Opera */
+  transform: rotate(-90deg);
+  flex-grow: 1;
+}
+
+.backlink {
+  margin: 3rem;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.loading-content {
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-top-color: #51d4db;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}

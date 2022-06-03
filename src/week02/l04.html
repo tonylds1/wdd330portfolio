@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 01 Exercises and Notes<</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-title">
+        <div class="vertical">
+          <h1>Week02 - L02 - Notes</h1>
+        </div>
+        <div class="backlink">
+          <a href="../index.html">BACK TO MENU</a>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h1>Notes</h1>
+
+        <ul>
+          <li>
+            <h2>Read Ch10: Testing and Debugging</h2>
+            <p>
+              About root causes: erros from the system, from the programmer, and
+              from the customer
+            </p>
+            <p>stack trace helps to understand the path of the error</p>
+            <p>
+              <b>strict mode</b> increase the number of exceptions and warnings
+              due its code analisys level
+            </p>
+            <p>strict mode are present since ECMAScript 5</p>
+            <p>
+              alert and console.log are ways to debug. Also , the browser could
+              have debugging tools
+            </p>
+            <p>
+              Error Objects: EvalError, RangeError, Refference Error,
+              SyntaxError, typeError, URIError, InternalError
+            </p>
+            <p>Jest could be used for TDD</p>
+          </li>
+          <li>
+            <h2>Read How Single-Page Applications Work</h2>
+            <p>
+              Important location properties (for SPA): pathname, search, hash
+            </p>
+            <p>
+              Browser tab has a browsing context (contains a session history)
+            </p>
+            <p>session history vs history API</p>
+            <p>History API functions: pushState, replaceState, Go</p>
+            <p>
+              pushState and replaceState Parameters (state, title, path) the
+              title is not used by today's browsers
+            </p>
+            <p>
+              the history API is just session history manipulation. if the page
+              reloads, a new document is created and the history APi is lost.
+            </p>
+          </li>
+          <li>
+            <h2>Read The Problem with Single Page Apps</h2>
+            <p>routing on SPAs are done by a single file</p>
+            <p>javascript routing requires more work than multpage app</p>
+          </li>
+          <li>
+            <h2>Read HTML5 Template Element</h2>
+            <p>template is verywell supported</p>
+            <p>is not rendered as the other elements</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="questions">
+        <h1>Questions</h1>
+        <ul>
+          <li>
+            <div>
+              <h2>My Questions</h2>
+              <p>
+                I am concerned about the explanation says what the browsers do
+                or if all that aork about history API using the methods needs to
+                be done by the developer.
+              </p>
+              <p>
+                What is the attribute that begins with 'data-' (like data-app)?
+                I have saw a lot but did not find any documentation. Is it a
+                convencion?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

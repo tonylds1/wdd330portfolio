@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 03 Exercises and Notes<</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-title">
+        <div class="vertical">
+          <h1>Week03 - L05 - Notes</h1>
+        </div>
+        <div class="backlink">
+          <a href="../index.html">BACK TO MENU</a>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h1>Notes</h1>
+
+        <ul>
+          <li>
+            <h2>About AJAX</h2>
+            <p>
+              Asynchronous Javascript And XML - Firstly designed to work with
+              XML, but today it is common the use of JSON instead.
+            </p>
+            <p>
+              CORS allows access on external sites. For public APIs the CORS
+              will need to be enabled
+            </p>
+            <p>
+              fetch API provide a gloval method that returns a promisse.
+              Promisse is used for non-blocker scripting. The rest of the code
+              can keep running while it is processing.
+            </p>
+            <p>
+              Using Promises, we can use "then" to handle the response and
+              "catch" to handle errors.
+            </p>
+          </li>
+          <h2>My Own Spinner with css</h2>
+          <div class="loading-content"></div>
+          <h2>About FormData</h2>
+          <p>
+            It is also provided by the Fetch API and make it easier to handle
+            data that needs to be sent to the backend.
+          </p>
+        </ul>
+      </section>
+
+      <section class="questions">
+        <h1>Questions</h1>
+        <ul>
+          <li>
+            <div>
+              <h2>About API</h2>
+              <p>API serves only XML and Json or also HTML?</p>
+              <h2>About CORS</h2>
+              <p>
+                I tried to fetch data from
+                "https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris"
+                below but even adding the "mode: cors" the site keep blocking me
+                for CORS problems.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "wdd330portfolio",
+  "version": "1.0.0",
+  "description": "My Porftolio HTML, CSS, and JS for BYU-I WDD330 Class",
+  "main": "main.js",
+  "scripts": {
+    "babel": "babel src -d dist",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "test": "jest",
+    "lint": "eslint *.js src/**/*.js"
+  },
+  "keywords": [],
+  "author": "Tony Moraes",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "eslint": "^8.16.0",
+    "jest": "^28.1.0",
+    "prettier": "2.6.2",
+    "snowpack": "^3.8.8"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          },
+          "useBuiltIns": "usage",
+          "corejs": "3.6.5"
+        }
+      ]
+    ]
+  }
+}
