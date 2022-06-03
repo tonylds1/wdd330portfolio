@@ -1,6 +1,6 @@
-// export async function getDataFromJson(path) {
-//   return await fetch(path).then(convertToJson);
-// }
+export async function getDataFromJson(path) {
+  return await fetch(path).then(convertToJson);
+}
 
 export function renderWithTemplate(template, parentElement, data, callback) {
   // clone the template
@@ -28,13 +28,13 @@ export const selectElement = (selector) => {
     `Double check your '${element}' seletor and make sure it's typed correctly`
   );
 };
-// function convertToJson(res) {
-//   if (res.ok) {
-//     return res.json();
-//   } else {
-//     throw new Error("Bad Response");
-//   }
-// }
+function convertToJson(res) {
+  if (res.ok) {
+    return res.json();
+  } else {
+    throw new Error("Bad Response");
+  }
+}
 
 function convertToText(res) {
   try {
