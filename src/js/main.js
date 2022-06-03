@@ -1,5 +1,5 @@
 import {
-  getDataFromJson,
+//   getDataFromJson,
   loadTemplate,
   renderWithTemplate,
   selectElement,

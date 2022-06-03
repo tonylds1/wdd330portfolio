@@ -1,6 +1,6 @@
-export async function getDataFromJson(path) {
-  return await fetch(path).then(convertToJson);
-}
+// export async function getDataFromJson(path) {
+//   return await fetch(path).then(convertToJson);
+// }
 
 export function renderWithTemplate(template, parentElement, data, callback) {
   // clone the template
