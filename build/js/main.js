@@ -44,16 +44,12 @@ const assignments = [
     "url": "week04/l08.html"
     },
     {
-    "label": "SleepOutside: Github",
-    "url": "week04/l08.html"
-    },
-    {
     "label": "SleepOutside: CORS",
     "url": "https://cors-anywhere.herokuapp.com/corsdemo"
     },
     {
     "label": "SleepOutside: Github",
-    "url": "https://jmmonjeremy.github.io/L02_Team_Activity_1/build/"
+    "url": "https://github.com/JmmonJeremy/L02_Team_Activity_1"
     },
     {
     "label": "SleepOutside: Trello",
@@ -65,7 +61,7 @@ const assignments = [
     },
     {
     "label": "Library Project: Github",
-    "url": "https://wmsmckay.github.io/WDD330-groupProject/"
+    "url": "https://github.com/Wmsmckay/WDD330-groupProject"
     },
     {
     "label": "Library Project: Trello",
